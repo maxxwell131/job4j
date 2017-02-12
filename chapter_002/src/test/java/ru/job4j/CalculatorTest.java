@@ -45,8 +45,6 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         try {
             calculator.devide( 10, 0);
-            assertThat( calculator.getResult(), is(5d));
-
         } catch (ArithmeticException e) {
             assertThat( e.getMessage(),is("Devide by ZERO !!!"));
 
