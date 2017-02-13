@@ -42,7 +42,7 @@ public class Calculator {
      * метод считает деление двух чисел
      * @param firstNumber - первый аргумент
      * @param secondNumber - второй аргумент
-     * @exception ArithmeticException - когда вделение на 0
+     * @exception ArithmeticException - когда деление на 0
      */
     public void devide(double firstNumber, double secondNumber){
         if ( 0 != secondNumber) {
