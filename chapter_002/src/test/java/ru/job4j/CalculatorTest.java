@@ -40,15 +40,12 @@ public class CalculatorTest {
     /**
      * Метод для тестирования деления первого числа на 0
      */
-    @Test
+     @Test(expected = ArithmeticException.class)
     public void whenDevShouldDevidedByZero () {
         Calculator calculator = new Calculator();
-        try {
+        //try {
             calculator.devide( 10, 0);
-        } catch (ArithmeticException e) {
-            assertThat( e.getMessage(),is("Devide by ZERO !!!"));
-
-        }
+            assertThat( calculator.getResult(), is(5d));
     }
 
     /**
