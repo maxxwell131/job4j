@@ -13,4 +13,13 @@ public class MaxTest {
         Max maxNumber = new Max();
         assertThat( maxNumber.max( 10, 9), is(10));
     }
+
+     /**
+     * тест максимального значения из трех чисел
+     */
+    @Test
+    public void whenFirstNumberMaxTwoAndThirdThenReturnFirstNumber() {
+        Max maxNumber = new Max();
+        assertThat( maxNumber.max( 5, 9, 12), is(12));
+    }
 }
