@@ -45,4 +45,16 @@ public class TurnTest {
         arr.back();
         Assert.assertThat(arr.array, is(expectedArray ));
     }
+
+     /**
+     *  тестирование сортировки массива методом "пузырька"
+     */
+    @Test
+    public void whenBubbleSortArrayIsTrue() {
+        Turn arr = new Turn();
+        arr.array = new int[] { 4, 2, 3, 6, 9, 8, 1, 5, 7};
+        int[] expectedArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        arr.bubbleSort();
+        Assert.assertThat(arr.array, is(expectedArray ));
+    }
 }
